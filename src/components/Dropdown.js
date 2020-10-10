@@ -23,7 +23,7 @@ const Dropdown = ({ options,onDropDownChange,selected}) => {
 
   const renderedOptions = options.map((option) => {
 
-    if(option.label==selected.label){
+    if(option.label===selected.label){
       return null;
     }
 
