@@ -20,7 +20,7 @@ const Dropdown = ({ options,onDropDownChange,selected}) => {
     };
   }, []);
 
-  
+
   const renderedOptions = options.map((option) => {
 
     if(option.label==selected.label){
@@ -37,7 +37,7 @@ const Dropdown = ({ options,onDropDownChange,selected}) => {
   });
 
   return (
-    <div className="ui form">
+    <div ref={ref} className="ui form">
       <div className="field">
         <label className="label">Select a Color</label>
         <div className={`ui selection dropdown ${open ?'visible active':''}`}
